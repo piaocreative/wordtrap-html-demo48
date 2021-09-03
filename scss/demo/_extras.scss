@@ -1,0 +1,103 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+#about-main {
+	position:relative;
+
+	.about-detail {
+		position:absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.about-more {
+	position: absolute;
+    left: 13rem;
+    bottom: -5rem;
+    padding: 1rem;
+    background-color: #fff;
+
+	@include media-breakpoint-down(lg) {
+		position: relative;
+		left: 0;
+		bottom: 0;
+		padding: 1.5rem;
+	}
+}
+
+.about-us-link {
+	padding: 1.5rem 4rem;
+	background-color: $success;
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.about-detail {
+	position: relative;
+	padding: 1rem 5rem;
+
+	h3, h5 {
+		line-height: 1;
+		font-weight: 200;
+	}
+
+	&:not(.border-0) {
+		&:after {
+			position: absolute;
+			top: 2.5rem;
+			right: 0;
+			content: "";
+			display: inline-block;
+			width: 1px;
+			height: 5rem;
+			background-color: #ffffff;
+			right: 0;
+
+			@include media-breakpoint-down(lg) {
+				display: none;
+			}
+		}
+	}
+}
+
+.authour {
+	.authour-details {
+		.author-content {
+			font-size: 1.25rem;
+			line-height: 1.5;
+		}
+
+		.author-name {
+			font-family: $body-font;
+			font-size: 1rem;
+			color: $theme-color;
+			line-height: 1;
+		}
+
+		.author-info {
+			font-family: $body-font;
+			font-size: 0.75rem;
+			color: #9f9f9f;
+			line-height: 1;
+		}
+	}
+}

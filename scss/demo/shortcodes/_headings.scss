@@ -1,0 +1,61 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: headings.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Heading Styles
+-----------------------------------------------------------------*/
+
+
+/* Heading Block - with Subtitle
+-----------------------------------------------------------------*/
+
+.heading-block { 
+	margin-bottom: 2.25rem; 
+	position: relative;
+
+	.title {
+		color: $secondary;
+		font-family: $heading-font;
+		font-weight: 300;
+		line-height: 1.2;
+	}
+
+	.sub-title {
+		font-size: 1.125rem;
+		color:#acaeaf;
+		line-height: 1.5rem;
+	}
+
+	p {
+		font-size: 1.0625rem;
+		color: $secondary;
+		line-height: 2rem;
+	}
+
+	.heading-arrow {
+		a {
+			text-decoration: none;
+			color: $white;
+			background-color: $success;
+			font-size: 1.75rem;
+			padding: 1rem 1.5rem;
+
+			&:nth-child(1) {
+				border: 1px solid #f4f4f4;
+				margin-right: -0.3rem;
+			}
+
+			&:hover {
+				color: $theme-color;
+			}
+			
+			@include media-breakpoint-down(sm) {
+				display: block;
+			}
+		}
+	}
+}

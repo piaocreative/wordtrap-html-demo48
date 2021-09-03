@@ -1,0 +1,156 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+
+/* Project
+-----------------------------------------------------------------*/
+.project {
+	.project-image {
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+
+		> a:nth-of-type(2) {
+			opacity: 0;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: 0;
+			@include transition(all 0.3s ease-in-out);
+		}
+	}
+
+	.project-details {
+		position: absolute;
+		top: 2rem;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		
+		@include media-breakpoint-down(lg) {
+			position: relative;
+			top: 0;
+		}
+	}
+
+	.project-title, .project-number {
+		font-family: $heading-font;
+		font-size: 2.8rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		line-height: 1.3;
+	}
+
+	.project-number {
+		margin-bottom: 5rem;
+	}
+
+	.project-btns {
+		a {
+			font-size: 1.5rem;
+			padding: 1rem 1.5rem;
+			background-color: $white;
+			color: $success;
+
+			&:nth-child(1) {
+				margin-right: -0.3rem;
+			}
+		}
+	}
+}
+
+/* Testimonial
+-----------------------------------------------------------------*/
+.testimonial {
+	.testimonial-details {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		
+		.testimonial-title {
+			font-family: $heading-font;
+			font-size: 2.8rem;
+			font-weight: 300;
+			color: $secondary;
+		}
+
+		.testimonial-info {
+			font-family: $body-font;
+			font-size: 1.125rem;
+			font-weight: 400;
+			color: #969696;
+		}
+	}
+}
+
+/* Ads
+-----------------------------------------------------------------*/
+.ads {
+    position: relative;
+    display: block;
+
+	.ads-bg {
+		img {
+			height: 100%;
+
+			@include media-breakpoint-down(lg) {
+				height: 22rem;
+			}
+		}
+	}
+
+	&.ads1 {
+		.ads-body {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			height: 100%;
+			padding: 4rem;
+
+			p {
+				font-family: $body-font;
+				font-size: 1.125rem;
+				line-height: 1.2rem;
+				color: #756f6e;
+			}
+
+			a {
+				font-size: 1rem;
+				padding: 1.5rem 3.5rem;
+				background-color: $success;
+				color: #fff;
+				text-decoration: none;
+				font-family: $heading-font;
+				font-weight: 600;
+				letter-spacing: 0.05rem;
+
+				@include media-breakpoint-down(sm) {
+					padding: 0.1rem 1rem;
+					display: inline-block !important;
+				}
+			}
+
+			@include media-breakpoint-down(lg) {
+				padding: 1rem;
+			}
+		}
+	}
+}
