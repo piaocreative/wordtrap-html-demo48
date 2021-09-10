@@ -12,6 +12,17 @@
 .post {
 	position: relative;
 	margin-bottom: 1.875rem;
+
+	&:hover {
+		.entry-title {
+			color: $success;
+		}
+
+		.entry-content {
+			opacity: 1;
+			transition: 0.5s;
+		}
+	}
 }
 
 .post-thumbnail {
@@ -51,6 +62,7 @@
 		color: #2d2d2d;
 		line-height: 1.5;
 		font-weight: 500;
+		opacity: 0;
 	}
 
 	.entry-link {
