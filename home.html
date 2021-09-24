@@ -214,17 +214,17 @@
                         ============================================= -->
                         <div class="row mx-0 my-3">
     
-                            <div class="fbox col-lg-4 col-md-6">
+                            <div class="fbox col-lg-4">
                                 <h4 class="heading-font mb-3 fw-semi-bold"><i class="fas fa-plus"></i>Interior Design</h4>
                                 <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
 
-                            <div class="fbox col-lg-4 col-md-6">
+                            <div class="fbox col-lg-4">
                                 <h4 class="heading-font mb-3 fw-semi-bold"><i class="fas fa-plus"></i>Modern Architecture</h4>
                                 <p class="m-0">Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                             </div>
 
-                            <div class="fbox col-lg-4 col-md-6">
+                            <div class="fbox col-lg-4">
                                 <h4 class="heading-font mb-3 fw-semi-bold"><i class="fas fa-plus"></i>Project Planning</h4>
                                 <p class="m-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
                             </div>
@@ -253,14 +253,25 @@
                             <div class="container">
                                 <div class="row m-0 justify-content-end">
                                     <div class="col-lg-5 bg-success p-5">
-                                        <p class="project-number text-white">01</p>
-                                        <p class="project-title text-white">Modern architecture</p>
-                                        <p class="body-font fs-6 fw-light lh-base text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                        <p class="body-font fs-6 fw-light lh-base text-white">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                                        <div class="products">
+                                            <div>
+                                                <p class="project-number text-white">01</p>
+                                                <p class="project-title text-white">Modern architecture</p>
+                                                <p class="body-font fs-6 fw-light lh-base text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                <p class="body-font fs-6 fw-light lh-base text-white">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                                            </div>
+
+                                            <div>
+                                                <p class="project-number text-white">01</p>
+                                                <p class="project-title text-white">Modern architecture</p>
+                                                <p class="body-font fs-6 fw-light lh-base text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                <p class="body-font fs-6 fw-light lh-base text-white">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="project-btns text-end p-0">
-                                        <a href="#" class="d-inline-block"><i class="fas fa-angle-left"></i></a>
-                                        <a href="#" class="d-inline-block bg-success text-white"><i class="fas fa-angle-right"></i></a>
+                                        <a href="#" class="d-inline-block product-prev"><i class="fas fa-angle-left"></i></a>
+                                        <a href="#" class="d-inline-block product-next bg-success text-white"><i class="fas fa-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -291,7 +302,7 @@
                                 <img src="./images/about/about2.png" class="img-fluid w-100">
                             </div>
 
-                            <div class="col-lg-6 offset-xl-2">
+                            <div class="col-lg-6 offset-lg-2">
 
                                 <p class="body-font fw-normal lh-base" style="font-size: 2rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum</p>
                                 <p class="body-font lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -409,12 +420,10 @@
                 <div class="section">
 
                     <div class="container">
-
                         <div class="ads ads1">
                             <div class="ads-bg">
-                                <img src="./images/ads/ads.png" class="img-full">
-                            </div>
-
+                                <div class="ads-bg-img" style="background-image: url(images/ads/ads.png);"></div>
+                            </div>        
                             <div class="ads-body d-flex align-items-center">
                                 <div class="col-md-7">
                                     <p class="mb-2">Working with us</p>
@@ -437,72 +446,108 @@
                         <div class="heading-block d-flex justify-content-between align-items-end">
                             <h2 class="title h1 text-uppercase mb-0">News</h2>
                             <div class="heading-arrow">
-                                <button class="btn bg-white text-success"><i class="fas fa-angle-left"></i></button>
-                                <button class="btn"><i class="fas fa-angle-right"></i></button>
+                                <button class="btn post-prev"><i class="fas fa-angle-left"></i></button>
+                                <button class="btn post-next"><i class="fas fa-angle-right"></i></button>
                             </div>
                         </div>
 
-                        <div class="row m-0">
+                        <div class="posts">
 
-                            <div class="col-lg-4">
-
-                                <article class="post">
-                                    <div class="post-thumbnail">
-                                        <a href="#"><img src="./images/posts/post1.png" class="img-full" alt="Posts"></a>
+                            <article class="post">
+                                <div class="post-thumbnail">
+                                    <a href="#"><img src="./images/posts/post1.png" class="img-full" alt="Posts"></a>
+                                </div>
+                                <div class="post-content">
+                                    <div class="entry-categories mt-3">
+                                        <a href="#">11 March 2021</a>
                                     </div>
-                                    <div class="post-content">
-                                        <div class="entry-categories mt-3">
-                                            <a href="#">11 March 2021</a>
-                                        </div>
-                                        <p class="my-2 entry-title">Massa cum sociis theme natoque eum penatibus</p>
-                                        <div class="entry-content">
-                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra</p>
-                                        </div>
+                                    <p class="my-2 entry-title">Massa cum sociis theme natoque eum penatibus</p>
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra</p>
                                     </div>
+                                </div>
 
-                                </article>
+                            </article>
 
-                            </div>
-
-                            <div class="col-lg-4">
-
-                                <article class="post">
-                                    <div class="post-thumbnail">
-                                        <a href="#"><img src="./images/posts/post3.png" class="img-full" alt="Posts"></a>
+                            <article class="post">
+                                <div class="post-thumbnail">
+                                    <a href="#"><img src="./images/posts/post3.png" class="img-full" alt="Posts"></a>
+                                </div>
+                                <div class="post-content">
+                                    <div class="entry-categories mt-3">
+                                        <a href="#">11 March 2021</a>
                                     </div>
-                                    <div class="post-content">
-                                        <div class="entry-categories mt-3">
-                                            <a href="#">11 March 2021</a>
-                                        </div>
-                                        <p class="my-2 entry-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                                        <div class="entry-content">
-                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra</p>
-                                        </div>
+                                    <p class="my-2 entry-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra</p>
                                     </div>
+                                </div>
 
-                                </article>
+                            </article>
 
-                            </div>
-
-                            <div class="col-lg-4">
-
-                                <article class="post">
-                                    <div class="post-thumbnail">
-                                        <a href="#"><img src="./images/posts/post2.png" class="img-full" alt="Posts"></a>
+                            <article class="post">
+                                <div class="post-thumbnail">
+                                    <a href="#"><img src="./images/posts/post2.png" class="img-full" alt="Posts"></a>
+                                </div>
+                                <div class="post-content">
+                                    <div class="entry-categories mt-3">
+                                        <a href="#">11 March 2021</a>
                                     </div>
-                                    <div class="post-content">
-                                        <div class="entry-categories mt-3">
-                                            <a href="#">11 March 2021</a>
-                                        </div>
-                                        <p class="my-2 entry-title">Adipiscing sem neque sed ipsum nam quam</p>
-                                        <div class="entry-content">
-                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra</p>
-                                        </div>
+                                    <p class="my-2 entry-title">Adipiscing sem neque sed ipsum nam quam</p>
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra</p>
                                     </div>
+                                </div>
 
-                                </article>
+                            </article>
 
-                            </div>
+                            <article class="post">
+                                <div class="post-thumbnail">
+                                    <a href="#"><img src="./images/posts/post1.png" class="img-full" alt="Posts"></a>
+                                </div>
+                                <div class="post-content">
+                                    <div class="entry-categories mt-3">
+                                        <a href="#">11 March 2021</a>
+                                    </div>
+                                    <p class="my-2 entry-title">Massa cum sociis theme natoque eum penatibus</p>
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra</p>
+                                    </div>
+                                </div>
+
+                            </article>
+
+                            <article class="post">
+                                <div class="post-thumbnail">
+                                    <a href="#"><img src="./images/posts/post3.png" class="img-full" alt="Posts"></a>
+                                </div>
+                                <div class="post-content">
+                                    <div class="entry-categories mt-3">
+                                        <a href="#">11 March 2021</a>
+                                    </div>
+                                    <p class="my-2 entry-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra</p>
+                                    </div>
+                                </div>
+
+                            </article>
+
+                            <article class="post">
+                                <div class="post-thumbnail">
+                                    <a href="#"><img src="./images/posts/post2.png" class="img-full" alt="Posts"></a>
+                                </div>
+                                <div class="post-content">
+                                    <div class="entry-categories mt-3">
+                                        <a href="#">11 March 2021</a>
+                                    </div>
+                                    <p class="my-2 entry-title">Adipiscing sem neque sed ipsum nam quam</p>
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra</p>
+                                    </div>
+                                </div>
+
+                            </article>
 
                         </div>
 
@@ -528,20 +573,37 @@
                             <div class="container">
                                 <div class="row m-0 justify-content-end">
                                     <div class="col-lg-5 bg-success p-4">
-                                        <p class="team-number text-white">01</p>
-                                        <p class="team-title text-white mb-1">Alexey<br>McGregor</p>
-                                        <div class="team-category">
-                                            <p>CEO & Founder</p>
+                                        <div class="teams">
+                                            <div>
+                                                <p class="team-number text-white">01</p>
+                                                <p class="team-title text-white mb-1">Alexey<br>McGregor</p>
+                                                <div class="team-category">
+                                                    <p>CEO & Founder</p>
+                                                </div>
+                                                <div class="team-info">
+                                                    <p class="mb-1">+1 234 5697</p>
+                                                    <p>alexey@saler.com</p>
+                                                </div>
+                                                <p class="body-font fs-6 fw-light lh-base text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                            </div>
+
+                                            <div>
+                                                <p class="team-number text-white">01</p>
+                                                <p class="team-title text-white mb-1">Alexey<br>McGregor</p>
+                                                <div class="team-category">
+                                                    <p>CEO & Founder</p>
+                                                </div>
+                                                <div class="team-info">
+                                                    <p class="mb-1">+1 234 5697</p>
+                                                    <p>alexey@saler.com</p>
+                                                </div>
+                                                <p class="body-font fs-6 fw-light lh-base text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                            </div>
                                         </div>
-                                        <div class="team-info">
-                                            <p class="mb-1">+1 234 5697</p>
-                                            <p>alexey@saler.com</p>
-                                        </div>
-                                        <p class="body-font fs-6 fw-light lh-base text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
                                     </div>
                                     <div class="team-btns text-end p-0">
-                                        <a href="#" class="d-inline-block"><i class="fas fa-angle-left"></i></a>
-                                        <a href="#" class="d-inline-block bg-success text-white"><i class="fas fa-angle-right"></i></a>
+                                        <a href="#" class="d-inline-block team-prev"><i class="fas fa-angle-left"></i></a>
+                                        <a href="#" class="d-inline-block bg-success text-white team-next"><i class="fas fa-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -559,33 +621,63 @@
                         <div class="heading-block d-flex justify-content-between align-items-end">
                             <h2 class="title h1 text-uppercase mb-0">Our <span class="text-primary d-block">testimonials</span></h2>
                             <div class="heading-arrow">
-                                <button class="btn bg-white text-success"><i class="fas fa-angle-left"></i></button>
-                                <button class="btn"><i class="fas fa-angle-right"></i></button>
+                                <button class="btn testimonial-prev"><i class="fas fa-angle-left"></i></button>
+                                <button class="btn testimonial-next"><i class="fas fa-angle-right"></i></button>
                             </div>
                         </div>
 
-                        <div class="testimonial">
+                        <div class="testimonials">
 
-                            <div class="row m-0">
+                            <div class="testimonial">
 
-                                <div class="testimonial-image col-lg-4">
-                                    <img src="./images/testimonials.png" class="img-full">
-                                </div>
-
-                                <div class="col-lg-6 d-flex align-items-center">
-
-                                    <div class="testimonial-details">
-                                        <p class="testimonial-title mb-2">Jack Russel</p>
-                                        <div class="testimonial-info">
-                                            <p>Gazprom Company</p>
-                                        </div>
-                                        <p class="body-font lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                        <p class="body-font lh-base">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                                        <p class="body-font lh-base mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</p>
+                                <div class="row m-0">
+    
+                                    <div class="testimonial-image col-lg-4">
+                                        <img src="./images/testimonials.png" class="img-full">
                                     </div>
-
+    
+                                    <div class="col-lg-6 d-flex align-items-center">
+    
+                                        <div class="testimonial-details">
+                                            <p class="testimonial-title mb-2">Jack Russel</p>
+                                            <div class="testimonial-info">
+                                                <p>Gazprom Company</p>
+                                            </div>
+                                            <p class="body-font lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                            <p class="body-font lh-base">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                                            <p class="body-font lh-base mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</p>
+                                        </div>
+    
+                                    </div>
+    
                                 </div>
+    
+                            </div>
 
+                            <div class="testimonial">
+
+                                <div class="row m-0">
+    
+                                    <div class="testimonial-image col-lg-4">
+                                        <img src="./images/testimonials.png" class="img-full">
+                                    </div>
+    
+                                    <div class="col-lg-6 d-flex align-items-center">
+    
+                                        <div class="testimonial-details">
+                                            <p class="testimonial-title mb-2">Jack Russel</p>
+                                            <div class="testimonial-info">
+                                                <p>Gazprom Company</p>
+                                            </div>
+                                            <p class="body-font lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                            <p class="body-font lh-base">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                                            <p class="body-font lh-base mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</p>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
                             </div>
 
                         </div>
@@ -606,7 +698,7 @@
 
                 <!-- Footer top
                 ============================================= -->
-                <div id="footer-top">
+                <div id="footer-top" class="text-center text-xl-center">
                     <a href="index.html" class="navbar-brand px-3" data-dark-logo="images/logo.png">
                         <img src="images/logo.png" alt="Saler Logo">
                     </a>
@@ -619,9 +711,9 @@
 
                     <div class="row m-0">
 
-                        <div class="col-6 col-lg-2">
+                        <div class="col-md-6 col-xl-2">
 
-                            <div class="widget widget-links">
+                            <div class="widget widget-links text-center text-xl-center">
                                 <div class="widget-content">
                                     <ul class="list-group mb-2">
                                         <li><a href="#">Home</a></li>
@@ -634,9 +726,9 @@
 
                         </div>
 
-                        <div class="col-6 col-xl-3">
+                        <div class="col-md-6 col-xl-3">
 
-                            <div class="widget widget-custom-html">
+                            <div class="widget widget-custom-html text-center text-xl-center">
                                 <h5 class="widget-title text-white">Saler Company</h5>
                                 <div class="widget-content">
                                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
@@ -645,9 +737,9 @@
 
                         </div>
                         
-                        <div class="offset-xl-1 col-6 col-lg-3">
+                        <div class="col-md-6 col-xl-3 offset-xl-1 ">
 
-                            <div class="widget widget-custom-html">
+                            <div class="widget widget-custom-html text-center text-xl-center">
                                 <p class="widget-title">Contact Us</p>
                                 <div class="widget-content">
                                     <a href="#">
@@ -667,9 +759,9 @@
 
                         </div>
 
-                        <div class="col-6 col-lg-3">
+                        <div class="col-md-6 col-xl-3">
 
-                            <div class="widget widget-subscribe">
+                            <div class="widget widget-subscribe text-center text-xl-center">
                                 <p class="widget-title">Subscribe To Our News</p>
                                 <div class="widget-content">
                                     <form id="widget-subscribe-form" action="#" method="post">
@@ -685,7 +777,7 @@
 
                             <div class="widget widget-social mb-lg-0">
                                 <div class="widget-content">
-                                    <ul class="social-icons d-flex align-items-center">
+                                    <ul class="social-icons d-flex align-items-center justify-content-center justify-content-xl-start">
                                         <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="#" target="_blank" title="instragram"><i class="fab fa-instagram"></i></a></li>
@@ -701,13 +793,13 @@
                 
                 <!-- Footer bottom
                 ============================================= -->
-                <div id="footer-bottom" class="d-flex justify-content-between">
+                <div id="footer-bottom" class="d-md-flex justify-content-between text-center text-xl-center">
 
                     <p class="mb-0">Copyright &copy; 2020 InteriorSaler</p>
 
                     <div class="widget widget-payment mb-lg-0">
                         <div class="widget-content">
-                            <div class="payments d-flex">
+                            <div class="payments d-flex justify-content-center justify-content-xl-start">
                                 <span class="payment-icon"><img src="images/payments/visa.png" alt="Visa"></span>
                                 <span class="payment-icon"><img src="images/payments/mastercard.png" alt="Mastercard"></span>
                                 <span class="payment-icon"><img src="images/payments/paypal.png" alt="Paypal"></span>
@@ -732,5 +824,7 @@
     
     <!-- Slick JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/main.js"></script>
 
 </body>

@@ -43,6 +43,8 @@
 			background-color: $success;
 			font-size: 1.75rem;
 			padding: 1rem 1.5rem;
+			background-color: $white;
+			color: $success;
 
 			&:nth-child(1) {
 				border: 1px solid #f4f4f4;
@@ -50,11 +52,8 @@
 			}
 
 			&:hover {
-				color: $theme-color;
-			}
-			
-			@include media-breakpoint-down(sm) {
-				display: block;
+				color: $white;
+				background-color: $success;
 			}
 		}
 	}
