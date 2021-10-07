@@ -17,11 +17,12 @@
 		margin-right:1rem;
 	}
 
-	p {	
-		font-family: $body-font;
-		font-size: 0.875rem;
-		color: #606060;
-		line-height: 1.2rem;
+	.fbox-header{
+		p {	
+			font-size: 0.875rem;
+			color: #606060;
+			line-height: 1.2rem;
+		}
 	}
 
 	@include media-breakpoint-down(lg) {
