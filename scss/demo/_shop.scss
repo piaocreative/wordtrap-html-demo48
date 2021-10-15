@@ -19,6 +19,8 @@
 /* Project
 -----------------------------------------------------------------*/
 .project {
+	margin-bottom: 1.875rem;
+
 	.project-image {
 		position: relative;
 
@@ -135,16 +137,6 @@
 				font-size: 1.125rem;
 				line-height: 1.2rem;
 				color: #756f6e;
-			}
-
-			a {
-				padding: 1.5rem 3.5rem;
-				background-color: $success;
-				color: #fff;
-				text-decoration: none;
-				font-family: $heading-font;
-				font-weight: 600;
-				letter-spacing: 0.05rem;
 			}
 		}
 	}
