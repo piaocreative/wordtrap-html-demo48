@@ -4,42 +4,13 @@
 
 -----------------------------------------------------------------*/
 .error-404 {
-    position: relative;
+    padding: 3rem 0;
 
-    .error-content {
-        position: absolute;
-        top: -8rem;
-        right: 0;
-        left: 0;
-        height: 100%;
-    }
-
-    @include media-breakpoint-down(lg) {
-        .error-banner {
-            img {
-                height: 45rem
-            }
-        }
-
-        .error-content {
-            top: -4rem;
-        }
-    }
-
-    @include media-breakpoint-down(sm) {
-        .error-banner {
-            img {
-                height: 25rem
-            }
-        }
-
-        .error-content {
-            top: -3rem;
-
-            a {
-                font-size: 0.75rem;
-                padding: 1rem;
-            }
+    .go-home {
+        @include media-breakpoint-up(lg) {
+            position: relative;
+            top: -12rem;
+            margin-bottom: -6rem;
         }
     }
 }
