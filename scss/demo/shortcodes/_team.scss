@@ -34,6 +34,7 @@
 			top: 0;
 			left: 0;
 			right: 0;
+			
 			@include transition(all 0.3s ease-in-out);
 		}
 	}
@@ -80,7 +81,7 @@
 			font-size: 1.5rem;
 			padding: 1rem 1.5rem;
 			background-color: $white;
-			color: $success;
+			color: $theme-color;
 
             &:nth-child(1) {
                 margin-right: -0.3rem;

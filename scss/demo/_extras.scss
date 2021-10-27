@@ -10,24 +10,6 @@
 	Extra Styles
 -----------------------------------------------------------------*/
 
-.shipping-banner {
-	position: absolute;
-	left: 4.375rem;
-	top: 5.625rem;	
-}
-
-#about-main {
-	position:relative;
-
-	.about-detail {
-		position:absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-	}
-}
-
 .about-more {
 	position: absolute;
     left: 13rem;
@@ -45,24 +27,26 @@
 
 .about-detail {
 	position: relative;
-	padding: 1rem 5rem;
+	padding-left: 3.75rem;
+	padding-right: 3.75rem;
 
 	h3, h5 {
 		line-height: 1;
 		font-weight: 200;
 	}
 
-	&:not(.border-0) {
+	&:not(:last-child) {
 		&:after {
-			position: absolute;
-			top: 2.5rem;
-			right: 0;
 			content: "";
-			display: inline-block;
+			position: absolute;
+			top: 50%;
+			right: 0;			
+			display: block;
 			width: 1px;
 			height: 5rem;
-			background-color: #ffffff;
-			right: 0;
+			background-color: rgba($white, 0.5);
+			
+			@include translateY(-50%);
 
 			@include media-breakpoint-down(lg) {
 				display: none;

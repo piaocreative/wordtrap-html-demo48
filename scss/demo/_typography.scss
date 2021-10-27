@@ -131,5 +131,14 @@ i {
 
 a {
 	text-decoration: none;
+
 	@include transition(color 0.3s ease-in-out);
+
+	&:hover {
+		color: $theme-color;
+	}
+}
+
+#content {
+	position: relative;
 }

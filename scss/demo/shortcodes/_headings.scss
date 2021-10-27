@@ -18,7 +18,6 @@
 	position: relative;
 
 	.title {
-		color: $secondary;
 		font-weight: 300;
 		line-height: 1.2;
 	}
@@ -31,7 +30,7 @@
 
 	p {
 		font-size: 1.0625rem;
-		color: $secondary;
+		color: $theme-color;
 		line-height: 2rem;
 	}
 
@@ -39,11 +38,11 @@
 		button {
 			text-decoration: none;
 			color: $white;
-			background-color: $success;
+			background-color: $theme-color;
 			font-size: 1.75rem;
 			padding: 1rem 1.5rem;
 			background-color: $white;
-			color: $success;
+			color: $theme-color;
 
 			&:nth-child(1) {
 				border: 1px solid #f4f4f4;
@@ -52,7 +51,7 @@
 
 			&:hover {
 				color: $white;
-				background-color: $success;
+				background-color: $theme-color;
 			}
 		}
 	}

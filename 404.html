@@ -36,49 +36,74 @@
 	============================================= -->
 	<div id="wrapper" class="clearfix">
 
-        <!-- Header
+        <!-- Top Bar
 		============================================= -->
-		<header id="header" class="transparent-header">
+        <div class="navbar navbar-expand-xl navbar-light navbar-top">
 
             <div class="container">
 
-                <div class="d-lg-flex justify-content-between py-2">
-                    <div id="top-infos">
-                        <ul>
-                            <li>
-                                <a><i class="far fa-envelope"></i><span>info@sale.com</span></a>
+                <!-- Navbar Toggler
+                ============================================= -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#topbarCollapse" aria-controls="topbarCollapse" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>                             
+
+                <!-- Topbar Collapse
+                ============================================= -->
+                <div id="topbarCollapse" class="collapse navbar-collapse">
+
+                    <!-- Top Infos
+                    ============================================= -->
+                    <ul id="top-infos" class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ps-0"><i class="far fa-envelope"></i><span>info@sale.com</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-phone"></i><span>+1 233 456 789</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-map-marker-alt"></i><span>7300-7398 Colonial Rd, Brooklyn, NY 11209</span></a>
+                        </li>
+                    </ul><!-- Top Infos -->
+
+                    <!-- Navbar Toggler
+                    ============================================= -->
+                    <div class="d-flex align-items-center">
+                        <span class="heading-font fs-6 fw-semi-bold text-secondary m-0">Our Social Network:</span>
+                        
+                        <ul id="top-social" class="navbar-nav flex-row">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
                             </li>
-                            <li>
-                                <a><i class="fas fa-phone"></i><span>+1 233 456 789</span></a>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
                             </li>
-                            <li>
-                                <a><i class="fas fa-map-marker-alt"></i><span>7300-7398 Colonial Rd, Brooklyn, NY 11209</span></a>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link pe-0"><i class="fab fa-instagram"></i></a>
                             </li>
                         </ul>
-                    </div>
-    
-                    <div id="top-social" class="d-flex gap-2 justify-content-center align-items-center">
-                        <p class="heading-font fs-6 fw-semi-bold text-primary m-0">Our Social Network:</p>
-                        <ul class="gap-1">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+                    </div>                       
+
+                </div><!-- #topbarCollapse -->
 
             </div>
 
+        </div><!-- #top-bar -->
+
+        <!-- Header
+		============================================= -->
+		<header id="header">            
+
             <div id="header-wrap">
 
-                <nav class="navbar navbar-expand-xl navbar-light bg-primary">
+                <nav class="navbar navbar-expand-xl navbar-dark bg-secondary">
 
                     <div class="container">
 
                         <!-- Logo
                         ============================================= -->
-                        <a href="index.html" class="navbar-brand m-0" data-dark-logo="images/logo.png">
-                            <img src="images/logo.png" alt="Saler Logo">
+                        <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
+                            <img src="images/logo.png" alt="Saler Logo" class="img-fluid">
                         </a>
                         
                         <!-- Navbar Toggler
@@ -93,51 +118,43 @@
 
                             <!-- Primary Navigation
                             ============================================= -->
-                            <nav id="primary-menu">
-
-                                <ul class="navbar-nav gap-3">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Home</a>
-                                    </li>                                  
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Services</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Projects</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">About Us</a>
-                                    </li>                                    
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Contact</a>
-                                    </li>
-                                </ul>                                
-
-                            </nav><!-- #primary-menu -->
+                            <ul id="primary-menu" class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Home</a>
+                                </li>                                  
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">About Us</a>
+                                </li>                                    
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Contact</a>
+                                </li>
+                            </ul><!-- #primary-menu -->
 
                             <!-- Top Buttons
-                            ============================================= -->
-                            <div id="top-btns">
-                                
-                                <ul class="navbar-nav flex-row gap-2 align-items-center">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            <i class="far fa-user"></i>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            <span data-cart-items="1">
-                                                <i class="fas fa-shopping-cart"></i>
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div><!-- #top-btns -->
+                            ============================================= -->                                
+                            <ul id="top-btns" class="navbar-nav flex-row gap-2 align-items-center">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                                </li>                                
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-user"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link pe-0">
+                                        <span data-cart-items="1">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul><!-- #top-btns -->
 
                         </div><!-- Navbar Collapse -->
 
@@ -168,7 +185,7 @@
                                     <img src="./images/404/404-logo.png" class="w-100" alt="">
                                 </div>
                                 <div class="go-home text-center">
-                                    <a class="text-white btn btn-success text-uppercase">Go Home Page</a>
+                                    <a class="text-white btn btn-primary text-uppercase">Go Home Page</a>
                                 </div>
                             </div>
 
@@ -184,13 +201,13 @@
 
         <!-- Footer
 		============================================= -->
-		<footer id="footer" class="m-0">
+		<footer id="footer">
             
             <div class="container">
 
                 <!-- Footer top
                 ============================================= -->
-                <div id="footer-top" class="text-center text-xl-start">
+                <div id="footer-top">
                     <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
                         <img src="images/logo.png" alt="Saler Logo">
                     </a>
@@ -203,9 +220,9 @@
 
                     <div class="row">
 
-                        <div class="col-md-6 col-xl-2">
+                        <div class="col-md-2 col-xl-2">
 
-                            <div class="widget widget-links text-center text-xl-start">
+                            <div class="widget widget-links">
                                 <div class="widget-content">
                                     <ul class="list-group mb-2">
                                         <li><a href="#">Home</a></li>
@@ -218,9 +235,9 @@
 
                         </div>
 
-                        <div class="col-md-6 col-xl-3">
+                        <div class="col-md-3 col-xl-3">
 
-                            <div class="widget widget-custom-html text-center text-xl-start">
+                            <div class="widget widget-custom-html">
                                 <h5 class="widget-title text-white">Saler Company</h5>
                                 <div class="widget-content">
                                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
@@ -229,9 +246,9 @@
 
                         </div>
                         
-                        <div class="col-md-6 col-xl-3 offset-xl-1 ">
+                        <div class="col-md-3 col-xl-3 offset-xl-1">
 
-                            <div class="widget widget-custom-html text-center text-xl-start">
+                            <div class="widget widget-custom-html">
                                 <p class="widget-title">Contact Us</p>
                                 <div class="widget-content">
                                     <a href="#">
@@ -251,16 +268,16 @@
 
                         </div>
 
-                        <div class="col-md-6 col-xl-3">
+                        <div class="col-md-4 col-xl-3">
 
-                            <div class="widget widget-subscribe text-center text-xl-start">
+                            <div class="widget widget-subscribe">
                                 <p class="widget-title">Subscribe To Our News</p>
                                 <div class="widget-content">
                                     <form id="widget-subscribe-form" action="#" method="post">
                                         <div class="input-group">
                                             <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email bg-transparent" placeholder="Enter your Email">
                                             <div class="input-group-append">
-                                                <button class="btn btn-success heading-font text-white text-uppercase" type="submit"><i class="fas fa-angle-right"></i></button>
+                                                <button class="btn btn-primary text-white" type="submit"><i class="fas fa-angle-right"></i></button>
                                             </div>
                                         </div>
                                     </form>
@@ -269,7 +286,7 @@
 
                             <div class="widget widget-social mb-lg-0">
                                 <div class="widget-content">
-                                    <ul class="social-icons d-flex align-items-center justify-content-center justify-content-xl-start">
+                                    <ul class="social-icons d-flex align-items-center">
                                         <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="#" target="_blank" title="instragram"><i class="fab fa-instagram"></i></a></li>
@@ -287,9 +304,9 @@
                 ============================================= -->
                 <div id="footer-bottom" class="d-md-flex justify-content-between text-center text-xl-start">
 
-                    <p class="mb-0">Copyright &copy; 2020 InteriorSaler</p>
+                    <div class="copyrights">Copyright &copy; 2020 InteriorSaler</div>
 
-                    <div class="widget widget-payment mb-lg-0">
+                    <div class="widget widget-payment mb-0">
                         <div class="widget-content">
                             <div class="payments d-flex justify-content-center justify-content-xl-start">
                                 <span class="payment-icon"><img src="images/payments/visa.png" alt="Visa"></span>
@@ -299,7 +316,7 @@
                         </div>
                     </div>
 
-                    <p class="mb-0">All Rights Reserved</p>
+                    <div class="copyrights">All Rights Reserved</div>
 
                 </div><!-- #footer-bottom -->
 

@@ -17,7 +17,7 @@
 	.icon-wrapper {
 		i {
 			font-size: 1.5rem;
-			color: $success;
+			color: $theme-color;
 		}
 	}
 
@@ -28,16 +28,11 @@
 
 	.icon-header {
 		h4 {
+			color: $secondary;
 			font-size-adjust: $body-font;
 			font-size: 2.125rem;
-			line-height: 2rem;
 			font-weight: 400;
-			color: $theme-color;
-		}
-
-		P {
-			color: #626262;
-			line-height: 1;
+			line-height: 2rem;
 		}
 	}
 }

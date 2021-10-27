@@ -69,31 +69,11 @@
 			font-size: 1.5rem;
 			padding: 1rem 1.5rem;
 			background-color: $white;
-			color: $success;
+			color: $theme-color;
 
 			&:nth-child(1) {
 				margin-right: -0.3rem;
 			}
-		}
-	}
-}
-
-/* Testimonial
------------------------------------------------------------------*/
-.testimonial {
-	.testimonial-details {
-		margin-top: 1rem;
-		margin-bottom: 1rem;
-		
-		.testimonial-title {
-			font-size: 2.8rem;
-			font-weight: 300;
-			color: $secondary;
-		}
-
-		.testimonial-info {
-			font-size: 1.125rem;
-			color: #969696;
 		}
 	}
 }
@@ -131,7 +111,7 @@
 
 	&.ads1 {
 		.ads-body {
-			padding: 6rem 4rem;
+			padding: 4.5rem 4rem;
 
 			p {
 				font-size: 1.125rem;

@@ -18,6 +18,7 @@
 
 .widget {
 	position: relative;
+	margin-bottom: 1.875rem;
 
 	p {
 		line-height: 1.3rem!important;
@@ -58,10 +59,6 @@
 	
 						@include transition(all 0.3s ease-in-out);
 			
-						&:hover {
-							color: $theme-color;
-						}
-			
 						i {
 							vertical-align: top;
 							line-height: 1.8125rem;
@@ -87,22 +84,7 @@
 					font-size: 0.875rem;
 					color: #919191;
 					text-decoration: none;
-
-					&:hover {
-						color: $theme-color;
-					}
 				}
-			}
-		}
-
-		@include media-breakpoint-down(md) {
-			.widget-content {
-				justify-content: space-between;
-			}
-
-			ul {
-				width: auto;
-				margin: auto;
 			}
 		}
 	}
@@ -155,10 +137,6 @@
 				margin-bottom: 1rem;
 
 				i {
-					color: $success;
-				}
-
-				&:hover {
 					color: $theme-color;
 				}
 			}

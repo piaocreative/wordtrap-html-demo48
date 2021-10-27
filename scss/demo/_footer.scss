@@ -16,37 +16,23 @@
 
 #footer {
 	background-color: #232323;
-	margin-top: 6rem;
-
-	@include media-breakpoint-down(lg) {
-		margin-top: 0;
-	}
-}
-
-#footer-top {
-	padding-top: 4rem;
-	padding-bottom: 1rem;
-
-	.navbar-brand {
-		img {
-			width: 5rem;
-		}
-	}
+	padding-top: 3.75rem;
+	padding-bottom: 6rem;
 }
 
 #footer-main {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-top: 3.375rem;
+	padding-bottom: 3rem;
 	border-bottom: 1px solid #333333;
 }
 
 #footer-bottom {
-	padding: 2.375rem 0 4.375rem;
+	padding-top: 2.5rem;	
+}
 
-	p {
-		font-size: 0.875rem;
-		color: #808080;
-		line-height: 2;
-		z-index: 1;	
-	}
+.copyrights {
+	font-size: 0.875rem;
+	color: #808080;
+	line-height: 2;
+	z-index: 1;	
 }
